@@ -9,5 +9,9 @@ my_str = my_str.lower().split() # .split() alone just creates a copy, so that co
 
 my_set = {word for word in my_str}
 
+my_list = []
+
 for index, word in enumerate(my_set):
-    print(f"{index + 1} {word}")
+    my_list.append(f"{index + 1}. {word}")
+
+print(my_list)
