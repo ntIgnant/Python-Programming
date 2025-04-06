@@ -3,10 +3,15 @@ SIZE = 10
 def read_numbers():
 	numbers = []
 
-	for _ in range(SIZE)
-		numbers.append(int(input()))
+	for _ in range(SIZE):
+		try:
+			number = int(input("Enter a NUmber: "))
+			numbers.append(number)
 
-    return numbers
+		except ValueError:
+			print("Wrong Tye, try again")
+
+	return numbers
 
 
 l = read_numbers()
