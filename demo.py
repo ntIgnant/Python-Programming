@@ -8,11 +8,16 @@ from collections import Counter
 # print(counter)
 import collections
 
-word_list = ["cat", "dog", "dog", "dog", "dog", "cat", "cow", "cow", "lion", "fish"]
-random_str = "jabsdfhabshdfdkoewncmkugyaxcpoqiouiqgwermdenajsd"
+# word_list = ["cat", "dog", "dog", "dog", "dog", "cat", "cow", "cow", "lion", "fish"]
+# random_str = "jabsdfhabshdfdkoewncmkugyaxcpoqiouiqgwermdenajsd"
+#
+# word_count = Counter(word_list)
+# char_count = Counter(random_str)
+#
+# print(word_count)
+# print(char_count)
 
-word_count = Counter(word_list)
-char_count = Counter(random_str)
+a = [12]
 
-print(word_count)
-print(char_count)
+for x in a:
+    print(x)
