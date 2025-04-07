@@ -17,7 +17,16 @@ import collections
 # print(word_count)
 # print(char_count)
 
-a = [12]
+# Testing == vs 'is'
 
-for x in a:
-    print(x)
+bool_result =  1 == 1
+print(bool_result) # this will return 'True' because the actual value is the same, is like comparing
+# the character 'a' with the same character 'a', it doesn't depend on the variable, just the actual value
+
+num_list = [1, 2]
+num_list2 = [1, 2]
+
+bool_result2 = num_list is num_list2
+print(bool_result2) # this will return 'False' because the actual variables (lists) are
+# different ones, even though they contain exactly the same values
+
