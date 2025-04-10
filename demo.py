@@ -1,4 +1,5 @@
 from collections import Counter
+from pathlib import Path
 
 # message = "hola, esta es una prueba para contar es estar pruebaa"
 #
@@ -7,6 +8,8 @@ from collections import Counter
 # counter = message.count(word)
 # print(counter)
 import collections
+
+from pyasn1.debug import Printer
 
 # word_list = ["cat", "dog", "dog", "dog", "dog", "cat", "cow", "cow", "lion", "fish"]
 # random_str = "jabsdfhabshdfdkoewncmkugyaxcpoqiouiqgwermdenajsd"
@@ -19,14 +22,30 @@ import collections
 
 # Testing == vs 'is'
 
-bool_result =  1 == 1
-print(bool_result) # this will return 'True' because the actual value is the same, is like comparing
-# the character 'a' with the same character 'a', it doesn't depend on the variable, just the actual value
+# bool_result =  1 == 1
+# print(bool_result) # this will return 'True' because the actual value is the same, is like comparing
+# # the character 'a' with the same character 'a', it doesn't depend on the variable, just the actual value
+#
+# num_list = [1, 2]
+# num_list2 = [1, 2]
+#
+# bool_result2 = num_list is num_list2
+# print(bool_result2) # this will return 'False' because the actual variables (lists) are
+# # different ones, even though they contain exactly the same values
 
-num_list = [1, 2]
-num_list2 = [1, 2]
+# Creating a directory for fun :p
 
-bool_result2 = num_list is num_list2
-print(bool_result2) # this will return 'False' because the actual variables (lists) are
-# different ones, even though they contain exactly the same values
+curr = Path.cwd() # Current working directory Path
 
+newDir = Path("GymData")
+newDir.mkdir(parents=True, exist_ok=True) # Create the folder in the current working directory
+
+full_path = curr / newDir # Join the current working directory and the new created directory
+
+new_csv_file = full_path / "DataBase.csv"
+new_csv_file.touch() # Create the actual new csv file
+
+new_python_file = full_path / "main.py"
+new_python_file.touch() # Create the actual new python file (empty file)
+
+print(f"Two Files have been created '{new_csv_file}' and '{new_python_file}'!")
