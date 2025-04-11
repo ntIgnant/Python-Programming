@@ -17,8 +17,12 @@ new_csv.touch() # Create an empty file 'NewCsv.csv'
 header = ["Student", "ID", "Class", "GPA"]
 
 with Path(new_csv).open("wt") as file:
-    content = csv.writer(file) # Creates writable csv object
-    content.writerow(header) # Write a single row (first one for the header)
-    content.writerows({"Student": "Ignacio", "ID": "1133", "Class": "CS", "GPA": "3.2"}) # This can be written as a Dictionary
+    content = csv.DictWriter(file, fieldnames=header) # Creates the csv object as Dictionary (with its header values)
+    content.writeheader() # This is for the first line (the header content)
+    content.writerow({"Student": "Ignacio", "ID": "1133", "Class": "CS", "GPA": "3.2"}) # This can be written as a Dictionary
 
-with
+with new_csv.open("rt") as f:
+    contenido = csv.reader(f) # Create a readable csv object
+
+    for row in contenido:
+        print(row) # print all the rows
