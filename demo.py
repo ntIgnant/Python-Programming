@@ -35,17 +35,34 @@ from pyasn1.debug import Printer
 
 # Creating a directory for fun :p
 
-curr = Path.cwd() # Current working directory Path
+# curr = Path.cwd() # Current working directory Path
+#
+# newDir = Path("GymData")
+# newDir.mkdir(parents=True, exist_ok=True) # Create the folder in the current working directory
+#
+# full_path = curr / newDir # Join the current working directory and the new created directory
+#
+# new_csv_file = full_path / "DataBase.csv"
+# new_csv_file.touch() # Create the actual new csv file
+#
+# new_python_file = full_path / "main.py"
+# new_python_file.touch() # Create the actual new python file (empty file)
+#
+# print(f"Two Files have been created '{new_csv_file}' and '{new_python_file}'!")
 
-newDir = Path("GymData")
-newDir.mkdir(parents=True, exist_ok=True) # Create the folder in the current working directory
+# Now, I'll just create a folder from here for fun "fun"
 
-full_path = curr / newDir # Join the current working directory and the new created directory
+#
+# curr_dw = Path.cwd() # Current working directory path
+#
+# newDir = Path("DataStructures")
+# newDir.mkdir(parents=True, exist_ok=True) # Creates the actual directory
+#
+# absolute_path = curr_dw / newDir # Join the new folder into the current working directory
+#
+# # Now, I'll create an empty python file to do a LinkedList
+# newFile = Path("SinglyLinkedList.py")
+# absolute_file_path = absolute_path.joinpath(newFile) # Join the new file (same as: absolute_file_path =  absolute_path / newFile)
+# absolute_file_path.touch() # This creates the actual empty file
+# print(f"Python file '{newFile}' Created!")
 
-new_csv_file = full_path / "DataBase.csv"
-new_csv_file.touch() # Create the actual new csv file
-
-new_python_file = full_path / "main.py"
-new_python_file.touch() # Create the actual new python file (empty file)
-
-print(f"Two Files have been created '{new_csv_file}' and '{new_python_file}'!")
