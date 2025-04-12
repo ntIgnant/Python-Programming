@@ -1,0 +1,23 @@
+{
+    "artist": "Kendrick Lamar",
+    "album": "DAMN.",
+    "release_year": 2017,
+    "genres": [
+        "Hip-Hop",
+        "Rap"
+    ],
+    "tracks": [
+        {
+            "title": "DNA.",
+            "duration": "3:05"
+        },
+        {
+            "title": "HUMBLE.",
+            "duration": "2:57"
+        },
+        {
+            "title": "LOYALTY.",
+            "duration": "3:47"
+        }
+    ]
+}
