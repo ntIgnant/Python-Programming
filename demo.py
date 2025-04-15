@@ -1,5 +1,6 @@
 from collections import Counter
 from pathlib import Path
+# import pytorch # As this library is not built in python, I need to install it externally using pip (or pip3) install pytorch
 
 # message = "hola, esta es una prueba para contar es estar pruebaa"
 #
@@ -9,7 +10,6 @@ from pathlib import Path
 # print(counter)
 import collections
 
-from pyasn1.debug import Printer
 
 # word_list = ["cat", "dog", "dog", "dog", "dog", "cat", "cow", "cow", "lion", "fish"]
 # random_str = "jabsdfhabshdfdkoewncmkugyaxcpoqiouiqgwermdenajsd"
@@ -66,3 +66,14 @@ from pyasn1.debug import Printer
 # absolute_file_path.touch() # This creates the actual empty file
 # print(f"Python file '{newFile}' Created!")
 
+# # I'm just gonna create a python file to practice this pathlib shit
+#
+# folder_path = Path("week15_material")
+# file_path = folder_path / "comprehension.py"
+# file_path.touch() # Creates the actual new empty file
+# print(f"New file create din {file_path}")
+
+# # Another useless and completely unnecessary creation of a file from python
+# folder_path = Path("week15_material")
+# file_path = folder_path / "DataStruct_choice.py"
+# file_path.touch() # Creates the emtpy file

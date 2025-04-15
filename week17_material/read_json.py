@@ -11,4 +11,4 @@ with json_file_path.open("rt") as file:
     print(f"Users Online: ")
     for user in content:
         if user["online"] is True or user["online"] == "true":
-            print(user["username"]) # Not working, WTF? 
+            print(user["username"]) # Not working, WTF?
