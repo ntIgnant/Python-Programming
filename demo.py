@@ -77,3 +77,10 @@ import collections
 # folder_path = Path("week15_material")
 # file_path = folder_path / "DataStruct_choice.py"
 # file_path.touch() # Creates the emtpy file
+
+# # Just another file creation
+#
+# absolute_path = Path("week18_material")
+# file_path = absolute_path.joinpath("persons.py")
+# file_path.touch() # creates the actual empty file
+# print(f"New file created in '{file_path}'")
