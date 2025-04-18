@@ -84,3 +84,9 @@ import collections
 # file_path = absolute_path.joinpath("persons.py")
 # file_path.touch() # creates the actual empty file
 # print(f"New file created in '{file_path}'")
+
+# # another file creation
+# cwd_path = Path.cwd()
+#
+# file_path = cwd_path / "assertion_basics.py"
+# file_path.touch() # creates the empty file
