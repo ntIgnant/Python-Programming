@@ -90,3 +90,16 @@ import collections
 #
 # file_path = cwd_path / "assertion_basics.py"
 # file_path.touch() # creates the empty file
+
+# # Another fileee
+# cwd_path = Path.cwd() # current working directory path
+#
+# file_path = cwd_path / "logging.py"
+# file_path.touch() # creates the new empty file
+# print(f"New file '{file_path.name}' created!")
+
+# new file
+# cwd_path = Path.cwd()
+# file_path = cwd_path.joinpath("CL_programs.py")
+# file_path.touch() # Creates the empty file
+# print(f"New file '{file_path.name}' CREATED!")
