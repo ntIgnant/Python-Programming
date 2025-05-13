@@ -103,3 +103,7 @@ import collections
 # file_path = cwd_path.joinpath("CL_programs.py")
 # file_path.touch() # Creates the empty file
 # print(f"New file '{file_path.name}' CREATED!")
+
+# Create a new file
+cwd_path = Path.cwd() # current working directory path
+new_file = cwd_path.join("")
