@@ -1,0 +1,13 @@
+{
+    "course": "LZSCC.1111",
+    "students": [
+        {
+            "name": "John",
+            "grade": 80.2
+        },
+        {
+            "name": "Lea",
+            "grade": 100.0
+        }
+    ]
+}
