@@ -1,0 +1,4 @@
+INFO:root:Some information message
+WARNING:root:Some warning message
+ERROR:root:Some error happens here, but the code still runs
+CRITICAL:root:This basically means that the code got fucked here

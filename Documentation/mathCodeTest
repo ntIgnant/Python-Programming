@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.1, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/ntignant/Documents/CODE/Github/Python-Programming/Assertion
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_________________________ ERROR collecting mathCode.py _________________________
+mathCode.py:10: in <module>
+    assert result2 == 61, "This should give me 60" # For the pytest file
+E   AssertionError: This should give me 60
+E   assert 60 == 61
+=========================== short test summary info ============================
+ERROR mathCode.py - AssertionError: This should give me 60
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.08s ===============================
