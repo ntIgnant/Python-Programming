@@ -7,4 +7,11 @@ class Data:
         self.password = password
 
     def __hash__(self):
-        return hash((self.name, self.email, self.password)) # hash the
+        return hash((self.name, self.email, self.password)) # hash the object as a 'whole'
+        # First, all the class attributes are inside a tuple (immutable) and then, that tuple is hashed
+
+
+sensitive_info = Data("Oscar Diaz", "oscar@gmail.com", "password1234")
+
+hashed_info = hash(sensitive_info)
+print(hashed_info)
