@@ -16,5 +16,11 @@
 #l = [i % 4 for i in range(10) if i % 3]
 #print(l)
 
-p = [i % 2 for i in range(10) if i % 3]
-print(p)
+#p = [i % 2 for i in range(10) if i % 3]
+#print(p)
+
+j = [i for i in "abac"]
+print(j)
+
+set_j = set(j)
+print(set_j)
